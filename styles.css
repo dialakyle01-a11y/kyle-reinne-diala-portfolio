@@ -8,3 +8,20 @@
 .contact{padding:120px 9vw;background:var(--ink);color:white}.contact .section-label{color:#bba9ff}.contact h2{font-size:clamp(48px,7vw,90px);line-height:1;letter-spacing:-.06em;margin:0 0 25px}.contact>p{max-width:650px;color:#bfc1c5;font-size:17px}.contact-links{display:flex;flex-wrap:wrap;gap:15px;margin-top:35px}.contact-links a{border:1px solid #44484e;border-radius:999px;padding:12px 18px}.contact-links a:hover{border-color:#bba9ff;color:#bba9ff}footer{padding:22px 6vw;display:flex;justify-content:space-between;font-size:11px;color:#777;background:var(--paper)}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:800px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding:70px 7vw}.portrait-wrap{order:-1;justify-content:flex-start}.portrait-wrap img,.portrait-placeholder{width:190px;height:230px}.section{padding:70px 7vw}.two-col,.projects-head,.projects-grid,.skills-grid{grid-template-columns:1fr}.skill-box ul{columns:1}.edu-card div{display:block}.edu-card strong{display:block;margin-top:8px}.contact{padding:80px 7vw}footer{display:block}footer span{display:block;margin:4px 0}}
+
+
+/* Profile photo fix */
+.portrait-wrap img,
+.portrait-placeholder {
+  object-fit: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+@media (max-width: 800px) {
+  .portrait-wrap img {
+    object-fit: contain !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+}
